@@ -8,6 +8,7 @@ from sentence_transformers import SentenceTransformer, util
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
 
+
 def sentence_creation(dt):
     col_names = dt.iloc[0].tolist()
     indexes = dt.columns.tolist()
