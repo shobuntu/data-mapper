@@ -1,7 +1,7 @@
 import streamlit as st
 # import torch
 import pandas as pd
-import seaborn as sns
+# import seaborn as sns
 import matplotlib.pyplot as plt
 from sentence_transformers import SentenceTransformer, util
 
