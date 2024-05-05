@@ -3,5 +3,5 @@ numpy
 pandas
 seaborn
 streamlit
-transformers
+sentence_transformers
 torch
