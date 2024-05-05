@@ -6,7 +6,6 @@
     "codespaces": {
       "openFiles": [
         "README.md",
-        "requirement.txt",
         "src/app.py"
       ]
     },
