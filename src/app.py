@@ -8,7 +8,6 @@ from sentence_transformers import SentenceTransformer, util
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
 
-
 def sentence_creation(dt):
     col_names = dt.iloc[0].tolist()
     indexes = dt.columns.tolist()
@@ -58,8 +57,7 @@ def display_file_upload(input_file_name):
 def read_csv(input_file_name):
     df1 = ''
     print(input_file_name)
-    spt = ',' if input_file_name.name.lower().endswith("csv") else "\t" if input_file_name.name.lower().endswith("txt") \
-        else "|"
+    spt = ',' if input_file_name.name.lower().endswith("csv") else "\t" if input_file_name.name.lower().endswith("txt") else "|"
     try:
         df1 = pd.read_csv(input_file_name, sep=spt, header=None, skip_blank_lines=True)
     except ValueError as err:
